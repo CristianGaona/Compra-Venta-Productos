@@ -86,6 +86,8 @@ JPA utiliza anotaciones para conectar clases a tablas de la BD y asi evitar hace
 * @id amd @EmbededID. Es el atributo como clave primaria de la tabla dentro de la clase. @id se utiliza cuando es clave primaria sencilla y @EmbededID cuando es una clave primaria compuesta.
 * @GeneratedValue. Permite generar automáticamente generar valores para las clases primarias en nuestras clases
 * @OneToMany and @MatyToOne. Representar relaciones
+* @Repository indica a la clase que sera encargada de interactura con la base de datos
+
 
 ### Sprig Data
 Spring Data NO es una implementacion de JPA, sino mas bien es un proyecto que usa JPA para ofrecer funcionalidaes extra en la gestion de tareas desde JAVA a las base de datos.
@@ -118,3 +120,15 @@ spring.datasource.password=crisda24
 * CrudRepository: realizar el crue
 * PagingAndSortingRepository: incluye lo de Crud repository ademas de paginación y ordenamiento.
 * PARepository: Ademas de tener CrudRepository y PagingAndSortingRepository nos permite tareas específicas como Flush.
+
+### Query Methods
+
+* Permite realizar consultas sin SQL, los query methods proveen la posibilidad de generar consultas mediante el nombre de mo métodos
+* Tiene la posibilidad de retornar Optiona<T>
+
+![texto alternativo](/images/querymethods.png)
+
+En la imagen se puede observar la diferencia entre consultas con SQL y Query Methods
+
+[Documentación Query Methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods)
+[Documentación @Query](https://www.baeldung.com/spring-data-jpa-query)
