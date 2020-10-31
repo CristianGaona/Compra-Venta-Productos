@@ -124,11 +124,23 @@ spring.datasource.password=crisda24
 ### Query Methods
 
 * Permite realizar consultas sin SQL, los query methods proveen la posibilidad de generar consultas mediante el nombre de mo métodos
-* Tiene la posibilidad de retornar Optiona<T>
+* Tiene la posibilidad de retornar Optional<T>
 
 ![texto alternativo](/images/querymethods.png)
 
 En la imagen se puede observar la diferencia entre consultas con SQL y Query Methods
 
-[Documentación Query Methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods)
-[Documentación @Query](https://www.baeldung.com/spring-data-jpa-query)
+* [Documentación Query Methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods)
+* [Documentación @Query](https://www.baeldung.com/spring-data-jpa-query)
+
+### Data Mapper
+* Convertir o traducir dos objetos que pueden hacer una misma labor
+* No exponer directamente la base datos medianta la API
+* Esto garantiza que ningun agente externo, vizualice la forma del diseño de la base de datos
+* Desacoplar la API de una base de datos puntual
+* En el caso que se desee integrar una nueva base de datos con otros campos, pero que sea para el mismo proyecto, no es necesario cambiar todo el código, simplemente se crea otro traductor que sirva para traducir la nueva tabla al dominio
+* Evita tener campos inecesarios en la API
+* Evitar mezclar idiomas en el dominio
+### Documentación MapStruct
+* [Instalación](https://mapstruct.org/documentation/installation/)
+* [IDE Support](https://mapstruct.org/documentation/ide-support/)
