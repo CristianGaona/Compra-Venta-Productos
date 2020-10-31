@@ -144,3 +144,7 @@ En la imagen se puede observar la diferencia entre consultas con SQL y Query Met
 ### Documentación MapStruct
 * [Instalación](https://mapstruct.org/documentation/installation/)
 * [IDE Support](https://mapstruct.org/documentation/ide-support/)
+### Inyección de dependencias
+* Spring tiene contiene un contenedor de inversion de control, el cual se encarga de crear instancias de objetos conocidos como beans o components
+* @ Autowired permite realizar inyección de dependencias, con esta anotación Spring crea la intancia del objeto declarado, con esto se omite crear objetos de forma manual
+* @Servicio servidor de dominio, agrega una diferenciación semántica sobre lo que es una clase, servicio de la lógica de negocios
