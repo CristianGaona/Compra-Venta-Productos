@@ -151,3 +151,16 @@ En la imagen se puede observar la diferencia entre consultas con SQL y Query Met
 ### Controlar repuestas HTTP
 * Clase dedicada para recibir las respuestas que obtiene los controldores
 * HTTP Status definir que codigo retornar cada endpoint puntual
+### Documentación con Swagger
+* herramienta que permite documentar los servicios con antoaciones, permite que nuestra API sea mas profeesional y robusta
+* Con esto se puede dar a cononcer a los consumidores como es el funcionamiento de nuestras API's 
+
+### SpringSecurity
+* Ofrece varios mecanismos de autentificación y autorización de aplicaciones construidas en Spring Boot
+* Configuración por defecto
+## JWT
+* Controlar peteciones que recibe nuestra petición
+* incluido en el header - beader
+* Header, PayLoad, Signature
+
+![texto alternativo](/images/jwt.png)
