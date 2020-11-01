@@ -154,7 +154,7 @@ En la imagen se puede observar la diferencia entre consultas con SQL y Query Met
 ### Documentación con Swagger
 * herramienta que permite documentar los servicios con antoaciones, permite que nuestra API sea mas profeesional y robusta
 * Con esto se puede dar a cononcer a los consumidores como es el funcionamiento de nuestras API's 
-
+* [Documentación API](https://marketcrisda24.herokuapp.com/platzi-market/api/swagger-ui.html)
 ### SpringSecurity
 * Ofrece varios mecanismos de autentificación y autorización de aplicaciones construidas en Spring Boot
 * Configuración por defecto
@@ -164,3 +164,4 @@ En la imagen se puede observar la diferencia entre consultas con SQL y Query Met
 * Header, PayLoad, Signature
 
 ![texto alternativo](/images/jwt.png)
+
