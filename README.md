@@ -148,3 +148,6 @@ En la imagen se puede observar la diferencia entre consultas con SQL y Query Met
 * Spring tiene contiene un contenedor de inversion de control, el cual se encarga de crear instancias de objetos conocidos como beans o components
 * @ Autowired permite realizar inyección de dependencias, con esta anotación Spring crea la intancia del objeto declarado, con esto se omite crear objetos de forma manual
 * @Servicio servidor de dominio, agrega una diferenciación semántica sobre lo que es una clase, servicio de la lógica de negocios
+### Controlar repuestas HTTP
+* Clase dedicada para recibir las respuestas que obtiene los controldores
+* HTTP Status definir que codigo retornar cada endpoint puntual
