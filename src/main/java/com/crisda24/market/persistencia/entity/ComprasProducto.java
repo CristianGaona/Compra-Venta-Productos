@@ -4,12 +4,13 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
 import javax.persistence.Table;
 
 
 
 @Entity
-@Table (name = "compras_producto")
+@Table (name = "compras_productos")
 public class ComprasProducto {
 
 
@@ -20,6 +21,7 @@ public class ComprasProducto {
 	private Double total;
 	private Boolean estado;
 	@ManyToOne
+	@MapsId("idCompra")
 	@JoinColumn(name = "id_compra", insertable = false, updatable = false)
 	private Compra compra;
 	
@@ -50,6 +52,18 @@ public class ComprasProducto {
 	}
 	public void setEstado(Boolean estado) {
 		this.estado = estado;
+	}
+	public Compra getCompra() {
+		return compra;
+	}
+	public void setCompra(Compra compra) {
+		this.compra = compra;
+	}
+	public Producto getProducto() {
+		return producto;
+	}
+	public void setProducto(Producto producto) {
+		this.producto = producto;
 	}
 	
 	
