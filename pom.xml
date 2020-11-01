@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.crisda24</groupId>
 	<artifactId>plazi-market</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>plazi</name>
 	<description>Spring boot demo</description>
 
